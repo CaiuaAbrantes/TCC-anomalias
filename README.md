@@ -249,3 +249,21 @@ O worker assume que:
 ✔ Pronto para integração com FastAPI
 
 ---
+
+---
+
+### 🚨 Problemas Conhecidos e Limitações
+* **Análise Monovariada:** O algoritmo atualmente analisa a variável de temperatura individualmente, sem correlacionar simultaneamente outras variáveis como a umidade no mesmo cálculo estatístico.
+* **Dependência da Conexão:** A execução contínua do worker depende de uma conexão ativa e estável com a instância do banco de dados (InfluxDB).
+
+### 📑 Atendimento dos Requisitos de Entrega
+
+| Requisito Solicitado | Status | Descrição do Atendimento |
+| :--- | :---: | :--- |
+| **Código-fonte completo** | ✅ | Módulos de banco, detecção, simulação e tempo integrados no repositório. |
+| **Produto executável / acessível** | ✅ | Execução autônoma via `python main.py` ou em modo de simulação. |
+| **README.md com instruções** | ✅ | Documentado com arquitetura, fluxo, execução e dependências. |
+| **Descrição dos recursos** | ✅ | Módulos `detection`, `services`, `simulation` e `config` detalhados. |
+| **Evidências de funcionamento** | ✅ | Testes locais com `MODO_SENSOR = True` validados. |
+| **Problemas e limitações** | ✅ | Documentados no item "Problemas Conhecidos e Limitações". |
+| **Demonstração para o cliente** | ✅ | Fluxo pronto para execução e verificação dos logs de detecção. |
