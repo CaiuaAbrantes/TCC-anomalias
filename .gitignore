@@ -1,0 +1,26 @@
+# Python / Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes Virtuais (Virtual Environments)
+env/
+venv/
+.venv/
+ENV/
+
+# Configurações de Ambiente e Variáveis Sensíveis
+.env
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+
+# Arquivos de Controle de Estado e Logs do Worker
+ultimo_tempo.txt
+*.log
+
+# Bancos de dados locais / temporários
+*.db
+*.sqlite3
